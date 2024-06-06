@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Belum mampu buat web responsif hehehe, ini sudah 1 jam menuju deadline. 
+     Terima kasi RevoU, walaupun sebentar saja, tapi membuat saya konsisten belajar. -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="layout.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Louis-Aline Chocolatier</title>
+        <link rel="icon" href="LA-title.png" type="image">
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <navbar id="navbar">
+            <button id="toggle">&#9776;</button>
+            <a id="home-button" href="#"> <!-- Brand Logo -->
+                <img src="LA logo.jpg" alt="LA" class="logo">
+            </a> 
+            <div> <!-- Navbar List -->
+                <ul class="ul-navbar" id="ulnavbar">
+                    <li><a class="li-navbar" href="#">Home</a></li>
+                    <li><a class="li-navbar" href="#ABOUT">About</a></li>
+                    <li><a class="li-navbar" href="#PRODUCT">Product</a></li>
+                    <li><a class="li-navbar" href="#CONTACT">Contact</a></li>
+                </ul>
+            </div>
+                <select class="language-switch"> <!-- Language Switch -->
+                <option value="en">ENG</option>
+                <option value="es">ID</option>
+                <option value="fr">FR</option>
+             </select>
+        </navbar>
+
+        <!-- HOME -->
+        <div id="HOME"> 
+            <div class="banner">
+                <div class="background"><img src="feve.webp"></div>
+                <div class="background"><img src="mendiantCo.jpg" style="filter: brightness(0.7)"></div>
+                <div class="background"><img src="Chocolate.jpg"></div>
+                <div class="background"><img src="PralineCo.jpg" style="filter: brightness(0.7)"></div>
+                <div class="background"><img src="Nama.jpg"></div>
+            </div>
+            <img id="blur" src="black.jpg"> <!-- ovcerlay hitam -->
+            <div id="home-description">
+                <p class="hometext" id="hometext1">Hi, <a href="#" id="visitor">Chocolate Lovers</a> Welcome to Louis-Aline Chocolatier</p>
+                <p class="hometext" id="hometext2">Finest Chocolate in Bali</p>
+                <a class="hometext" id="hometext3" href="#PRODUCT">Take a Look →</a>
+            </div>
+            
+        </div> 
+        
+        <!-- ABOUT -->
+        <span class="line" id="line1"></span>
+        <div id="ABOUT">
+            <img src="about.jpg">
+            <div class="text-about">
+            <h1 class="header-about">Learn More About Us</h1>
+            <p class="desc-about">Welcome to Louis-Aline Chocolatier, where we specialize in premium quality chocolate. Our offerings include decadent pralines (chocolate bonbons), velvety nama chocolate, and elegant mendiants (chocolate coins with dried fruit and nuts). Using only the finest ingredients and traditional techniques, each handcrafted piece delivers a luxurious experience and exquisite flavors, ensuring pure chocolate bliss with every bite.</p>
+            </div>
+        </div>
+        <span class="line" id="line2"></span>
+        
+        <!-- PRODUCT -->
+        <br>
+        <span class="line" id="line3"></span>
+        <div id="PRODUCT">
+            <h1 class="header-product"></h1>
+            <p class="desc-product"></p>
+            <div class="product-showcase">
+                <div class="panel" style="background-image: url('ppraline.jpg')">           
+                    <p><a class="product" href="#PRALINE">Pralines</a></p>
+                </div>
+                <div class="panel" style="background-image: url('pnama.jpg')">
+                    <p><a class="product" href="#NAMA">Nama Chocolates</a></p>
+                </div>
+                <div class="panel" style="background-image: url('pmendiant.jpg')">
+                    <p><a class="product" href="#MENDIANT">Mendiants</a></p>
+                </div>
+            </div>
+        </div>
+        <span class="line" id="line4"></span>
+        
+        <!-- CONTACT US -->
+        <div id="CONTACT">
+            <div class="contact-left">
+                <img id="background-contact" src="contact.jpg">
+                <img id="logo1" src="LA-title.png">
+                <form id="stored-form" method="post">
+                    <label class="label-form" for="stored-name">Full name</label>
+                    <input class="input-form" type="text" id="stored-name" name="stored-name" readonly>
+                    <label class="label-form" for="stored-date">Date</label>
+                    <input class="input-form" type="date" id="stored-date" name="stored-date" readonly>
+                    <label class="label-form" for="stored-message">Message</label>
+                    <textarea rows="6" id="stored-message" name="stored-message" readonly></textarea>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h1 id="header-contact">Contact us</h1>
+                <p id="desc-contact">Have a question or special request? Reach out to us!</p>
+                <form id="contact-form" method="post">
+                    <label class="label-form" for="name">Full name</label>
+                    <input class="input-form" type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    <label class="label-form" for="date">Date</label>
+                    <input class="input-form" type="date" id="date" name="date">
+                    <label class="label-form" for="message">Message</label>
+                    <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+                    <button type="submit" id="submit" name="submit">Send</button>
+                </form>
+                <div id="outputerror"></div>
+                <div id="outputsuccess"></div>
+            </div>
+        </div>
+
+        <!-- WHATSAPP CHAT -->
+        <a href="https://api.whatsapp.com/send/?phone=081808800006&amp;text=Hi! I want to know more." target="_blank" id="whatsapp_button">
+            <img src="wa logo.png" alt="WhatsApp">
+        </a>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <ul class="menu">
+              <li class="menu_footer"><a class="menu_footer" href="#">Home</a></li>
+              <li class="menu_footer"><a class="menu_footer" href="#ABOUT">About</a></li>
+              <li class="menu_footer"><a class="menu_footer" href="#PRODUCT">Product</a></li>
+              <li class="menu_footer"><a class="menu_footer" href="#CONTACT">Contact</a></li>
+            </ul>
+            <p>&copy;2024 Narendera Sancaya | All Rights Reserved</p>
+          </footer>
+
+        <script src="layout.js"></script>
+    </body>
+    </html>
