@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Louis-Aline Chocolatier</title>
+        <link rel="icon" href="LA-title.png" type="image">
+    </head>
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div id="CONTACT">
+    <div class="contact-left">
+        <img id="background-contact" src="contact.jpg">
+        <img id="logo1" src="LA-title.png">
+        <h1 id="header-stored">Your Information</h1>
+        <p id="desc-stored">Here is your previous message.</p>
+        <form id="stored-form" method="post">
+            <label class="label-form" for="stored-name">Full name</label>
+            <input class="input-form" type="text" id="stored-name" name="stored-name" readonly>
+            <label class="label-form" for="stored-date">Date</label>
+            <input class="input-form" type="date" id="stored-date" name="stored-date" readonly>
+            <label class="label-form" for="stored-message">Message</label>
+            <textarea rows="6" id="stored-message" name="stored-message" readonly></textarea>
+        </form>
+    </div>
+    <div class="contact-right">
+        <h1 id="header-contact">Contact us</h1>
+        <p id="desc-contact">Have a question or special request? Reach out to us!</p>
+        <form id="contact-form" method="post">
+            <label class="label-form" for="name">Full name</label>
+            <input class="input-form" type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label class="label-form" for="date">Date</label>
+            <input class="input-form" type="date" id="date" name="date">
+            <label class="label-form" for="message">Message</label>
+            <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+            <button type="submit" id="submit" name="submit">Send</button>
+        </form>
+        <div id="outputerror"></div>
+        <div id="outputsuccess"></div>
+    </div>
+</div>
+
+<script src="contact.js"></script>
+
+  </body>
+  </html>
